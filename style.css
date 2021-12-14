@@ -1,9 +1,6 @@
 * {
     margin: 0;
 }
-html {
-    font-size: 16px;
-}
 header {
     padding-bottom: 10px;
     border-bottom: 1px solid lightgrey;
@@ -14,42 +11,20 @@ header {
     background-image: url(assets/misc/grille.png);
     height: 20vh;
 }
-#ABC {
-color: white;
-}
-#navbar {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-ul, li:not(:first-of-type) {
+ul, li {
     list-style: none;
-    font-size: 1rem;
-}
-ul > li >  h1 {
-    font-family: 'Oswald', arial;
-    color: grey;
-    display: block;
-    width: 150%;
 }
 
-ul::after {
-    content: "text";
-
+ul > li > h2 {
+    border-bottom: 6px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
-
-
-/* #hotel {
-border-bottom: 6px solid black;
-border-color: #f76900;
-} */
-#hotel::after {
-    display: block;
-    content: "";
-    height: 5px;
-    width: 100%;
-    background-color: #f76900;
+#hotel{
+    border-color: #f76900;
+}
+#resto{
+    border-color: #fcd04a;
 }
 #serv {
     border-color: #b9d482;
@@ -60,6 +35,13 @@ border-color: #f76900;
 #plus {
     border-color: #c078d0;
 }
+#navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
 
 #main {
     display: flex;
@@ -81,15 +63,12 @@ border-color: #f76900;
     text-align: center;
 }
 
-
-
 #test {
     font-family: 'Droid Sans', arial;
 }
 #test1 {
     font-family: 'Droid Serif', arial;
 }
-
 #test2 {
     font-family: 'Oswald', arial;
 }
