@@ -148,22 +148,31 @@ li {
 }
 #contact {
     display: flex;
+    justify-content: center;
     width: 100%;
     height: 100%;
     background-image: url(assets/misc/grille.png);
 }
+/* Space */
 
-#contact > ul > li {
-    display: flex;
+/* Break */
+#contact > ul:nth-of-type(1) {
+    width: 16%;
 }
-/* Space date */
-#contact > ul:not(:first-child):not(:last-child) > li:nth-of-type(2) {
-    color: red;
-    padding-bottom: 2%;
+#contact > ul:nth-of-type(2) {
+    width: 18%;
 }
-/* Space left*/
+#contact > ul:nth-of-type(3) {
+    width: 18%;
+}
+#contact > ul:nth-of-type(4) {
+    width: 18%;
+}
 
 /* Icons */
+#contact > ul:first-of-type > li {
+    display: flex;
+}
 #contact > ul:first-of-type >  li:nth-of-type(2):before {
     content: url(assets/misc/accueil_icone.png);
 }
@@ -175,15 +184,4 @@ li {
 }
 #contact > ul:first-of-type >  li:last-of-type:before {
     content: url(assets/misc/aide_icone.png);
-}
-
-/* Break */
-#contact > ul:nth-of-type(2) > li:nth-of-type(4) {
-    width: 60%;
-}
-#contact > ul:nth-of-type(3) > li:nth-of-type(4) {
-    width: 50%;
-}
-#contact > ul:nth-of-type(4) > li:nth-of-type(2) {
-    width: 50%;
 }
