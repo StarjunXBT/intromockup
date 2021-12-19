@@ -1,24 +1,27 @@
 * {
     box-sizing: border-box;
+    color: #858585;
   }
   
   html {
+      font-size: 16px;
       overflow-x: hidden;
   }
   
   header {
     width: 100vw;
-    height: 20vh;
+    height: 25vh;
     max-width: 100vw;
     max-height: 20vh;
     border-bottom: 1px solid lightgrey;
-    padding-bottom: 10px;
+    padding-bottom: 0.5%;
+    background: url(assets/misc/transparent.png);
   }
   
   #nav {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
     height: 100%;
     max-width: 100%;
@@ -33,30 +36,23 @@
     list-style-type: none;
   }
   
-  #nav>ul>li {
+  #nav>ul>li:not(:first-child) {
     font-family: 'droid sans';
     font-weight: lighter;
+    font-size: 0.8em;
   }
 
   #nav>ul>li>h2 {
     width: 120%;
     border-bottom: 6px solid;
     font-family: 'oswald';
+    font-size: 1.2em;
   }
 
   /* Space */
   #ABC {
-    margin-left: 20%;
     margin-right: 5%;
   }
-  #nav > ul:first-child {
-    margin-right: 20%;
-  }
-
-  #nav > ul:last-child {
-    margin-right: 20%;
-  }
-
   #nav > ul > li:not(:first-of-type) {
     padding-bottom: 5%;
   }
@@ -67,7 +63,6 @@
   
   #nav>ul:nth-of-type(1)>li>h2 {
     border-color: #f76900;
-    ;
   }
   
   #nav>ul:nth-of-type(2)>li>h2 {
@@ -105,10 +100,10 @@
   #bwrapper {
     width: 100vw;
     max-width: 100vw;
-    height: 10vh;
-    border-bottom: 1px solid lightgray;
-    border-top: 1px solid lightgray;
-    padding: 10px;
+    height: 10%;
+    border-bottom: 1px solid lightgrey;
+    border-top: 1px solid lightgrey;
+    padding: 1%;
   }
   
   #banner {
@@ -122,7 +117,7 @@
   
   #bannerp {
     font-weight: lighter;
-    font-size: 18px;
+    font-size: 1.13em;
     font-style: italic;
   }
   
@@ -130,7 +125,8 @@
   
   #sportsection {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 2%;
     width: 100%;
     max-width: 100%;
   }
@@ -150,9 +146,10 @@
   
   #sportsection>section>small,
   #sportsection>div>section>small {
-    color: #c3bbbf;
-    font-family: 'droid sans';
+    color: #A9A9A9;
+    font-family: 'droid serif', 'oswald';
     font-style: italic;
+    font-size: 0.75em;
   }
   
   
@@ -160,7 +157,8 @@
   
   #sportsection>section>p,
   #sportsection>div>section>p {
-    font-family: 'droid serif';
+    font-family: 'droid sans';
+    font-size: 0.813em;
   }
   
   
@@ -168,19 +166,20 @@
   
   #sportsection>section>p:last-of-type,
   #sportsection>div>section>p:last-of-type {
-    color: #c3bbbf;
-    font-family: 'oswald', serif;
+    color: #858585;
     font-style: italic;
+    font-family: 'Oswald Droid';
+
   }
   
   
   /* Golf */
   
   #golf {
-    width: 15%;
+    width: 13%;
     height: 90%;
-    border: 1px solid black;
-    padding: 15px 20px;
+    border: 1px solid lightgrey;
+    padding: 1.9% 1%;
   }
   
   #golf_img {
@@ -191,14 +190,15 @@
   /* Accrobanche & Fastfood section */
   
   #afwrapper {
-    width: 15%;
+    width: 11%;
   }
   
   
   /* Wrapper of comment and image section */
   
   #ciwrapper {
-    width: 35%;
+    width: 24%;
+
   }
   
   
@@ -206,13 +206,14 @@
   
   #img {
     display: grid;
-    grid-template-columns: 22% 22% 22%;
-    row-gap: 5%;
+    grid-template-columns: repeat(3, 22%);
+    gap: 10%;
   }
   
   #img>img {
-    border: 1px solid black;
-    padding: 10px;
+    border: 1px solid lightgrey;
+    padding: 5%;
+    box-shadow: 4px 4px 4px #D3D3D3;
   }
   
   
@@ -220,35 +221,64 @@
   
   #cwrapper {
     margin: 0 auto;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
     width: 100vw;
     max-width: 100vw;
   }
   
   #contact {
     display: flex;
+    font-size: 0.813rem;
     justify-content: center;
     width: 100%;
     height: 100%;
     background-image: url(assets/misc/grille.png);
   }
-  
-  
+
   /* Fonts */
   
   #contact>ul>li>h3 {
     font-family: 'oswald';
-    font-style: initial;
+    text-transform: uppercase;
     color: gray;
   }
   
-  #contact>ul>li>small {
+  #contact > ul:first-of-type > li {
     font-family: 'droid sans';
+  }
+  #contact > ul:first-of-type > li:nth-of-type(4) {
+    text-decoration: underline;
+  }
+  #contact > ul:first-of-type > li:nth-of-type(5) {
+    text-decoration: underline;
+
+  }
+  #contact > ul:nth-of-type(2) > li:nth-of-type(5) {
+    font-family: 'Oswald', 'serif';
+    font-style: italic;
+    text-decoration: underline;
+  }
+  #contact>ul>li>small {
+    font-family: 'droid serif';
     font-style: italic;
     color: gray;
+  }
+  #contact > ul:not(:first-child):not(:last-child) > li:nth-of-type(3) {
+    font-family: 'droid sans';
+    color: darkgray;
+    font-weight: bolder;
+  }
+
+  #contact > ul:not(:first-child):not(:last-child) > li:nth-of-type(4) {
+    font-family: 'droid sans';
+    font-weight: lighter;
+  }
+
+  #contact > ul:last-child > li:nth-of-type(2) {
+    font-family: 'droid sans';
   }
   
   
@@ -270,7 +300,7 @@
   /* Break text */
   
   #contact>ul:nth-of-type(1) {
-    width: 16%;
+    width: 13%;
   }
   
   #contact>ul:nth-of-type(2) {
@@ -278,11 +308,11 @@
   }
   
   #contact>ul:nth-of-type(3) {
-    width: 18%;
+    width: 13%;
   }
   
   #contact>ul:nth-of-type(4) {
-    width: 18%;
+    width: 15%;
   }
   
   
@@ -315,15 +345,26 @@
   }
   #nologo  {
       display: flex;
+      align-content: flex-start;
       flex-direction: column;
       width: 30%;
   }
 
   #nologo > ul > li {
     display: inline;
+    font-size: 0.75em;
   }
 
   #nologo > ul > li:not(:first-of-type) {
-      border-left: 1px solid black;
+      border-left: 1px solid lightgrey;
       padding-left: 1%;
   }
+
+  @media screen and (max-width: 1441px) {
+    html {
+      font-size: 12px;
+    }
+  }
+
+
+
