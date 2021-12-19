@@ -360,9 +360,26 @@
       padding-left: 1%;
   }
 
+  /* Media queries */
   @media screen and (max-width: 1441px) {
     html {
       font-size: 12px;
+    }
+    #img {
+      grid-template-columns: repeat(3, 30%);
+    }
+  }
+
+  @media screen and (max-width: 801px) {
+    html {
+      font-size: 10px;
+    }
+    #main {
+      height: 70vh;
+    }
+    #ytb {
+      width: 200px;
+      height: 200px;
     }
   }
 
