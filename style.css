@@ -166,7 +166,7 @@
   }
   
   
-  /* Comment and image section */
+  /* Wrapper of comment and image section */
   
   #ciwrapper {
     width: 35%;
@@ -280,4 +280,21 @@
   }
   
   /* Footer */
-  
+  footer {
+      display: flex;
+      justify-content: space-around;
+  }
+  #nologo  {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+  }
+
+  #nologo > ul > li {
+    display: inline;
+  }
+
+  #nologo > ul > li:not(:first-of-type) {
+      border-left: 1px solid black;
+      padding-left: 1%;
+  }
